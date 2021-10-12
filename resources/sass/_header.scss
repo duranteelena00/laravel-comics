@@ -1,0 +1,71 @@
+#dc-power-visa {
+    background: #0c7cec;
+    color: white;
+    font-size: 10px;
+    height: 20px;
+    width: 100%;
+    line-height: 20px;
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        span:first-of-type {
+          padding: 0 40px;
+        }
+    }
+}
+
+header img {
+    width: 55px;
+    height: auto;
+}
+
+header nav {
+    display: inline-flex;
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    ul>li {
+        margin-left: 20px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    ul>li.select,
+    ul>li.search {
+        color: rgb(75, 75, 75);
+    }
+
+    ul>li.select>span {
+        margin-left: 5px;
+        color: #0c7cec;
+    }
+
+    ul>li.search {
+        margin-left: 40px;
+        padding: 0  0 2px 40px;
+        border-bottom: 2px solid #0c7cec;
+    }
+
+    ul > li > a {
+        padding: 30px 0;
+        text-transform: uppercase;
+        color: rgb(75, 75, 75);
+    }
+
+    ul > li > a.active {
+        color: #0c7cec;
+        border-bottom: 4px solid #0c7cec;
+    }
+}
+
+#main-menu.container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

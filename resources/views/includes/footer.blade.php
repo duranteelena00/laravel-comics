@@ -1,6 +1,6 @@
 <footer class="m-0">
     <section>
-        <img src="{{ asset('images/footer-bg.jpg') }}" alt="">
+        <img class="bg" src="{{ asset('images/footer-bg.jpg') }}" alt="">
         <div class="container">
             <div class="lists">
                 <ul>
@@ -52,7 +52,7 @@
                     <li><a href="#">Shop DC Collectibles</a></li>
                 </ul>
             </div>
-            <img src="{{ asset('images/dc-logo-bg.png') }}" alt="" />
+            <img class="logo" src="{{ asset('images/dc-logo-bg.png') }}" alt="" />
         </div>
     </section>
     <section>

@@ -9,24 +9,17 @@ Create poi una rotta per visualizzare la lista di tutti i fumetti recuperati da 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel - Comics</title>
-    {{-- import bootstrap --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap-grid.min.css"
-        integrity="sha512-MJjgE48PpWFK4ZQowkReHYVkHv9Rl3ZqdxxdbisYuR0q0qRyVHSNw52YBvc0sqT0qtJFT3dirXdEMtd1l56ZUQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    {{-- my css --}}
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
     @include('includes.header')
-    <div class="jumbotron">
-        <img src="{{ asset('images/jumbotron.jpg') }}" alt="">
-    </div>
+    @include('includes.hero')
     <main>
         <section id="products">
             <div class="container">
                 <button>CURRENT SERIES</button>
-                @include('includes.card')
+                @include('includes.items')
                 <button>LOAD MORE</button>
             </div>
         </section>
@@ -63,8 +56,3 @@ Create poi una rotta per visualizzare la lista di tutti i fumetti recuperati da 
 
 </html>
 
-{{-- Create una pagina di dettaglio per visualizzare tutte le informazioni di un fumetto.
-Definite quindi una rotta che avrà un parametro per poter visualizzare dinamicamente tutte le pagine di dettaglio.
-Infine, fate sì che cliccando sulla card di un fumetto si possa accedere alla relativa pagina di dettaglio.
-Bonus:
-Aggiungete e stilate la classe active alla giusta voce del menu --}}

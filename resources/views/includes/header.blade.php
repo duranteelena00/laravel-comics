@@ -5,7 +5,7 @@
             <span class="me-2">ADDITIONAL DC SITES&#9660;</span>
         </div>
     </div>
-    <div class="container">
+    <div id="main-menu" class="container">
         <img id="small-logo" src="{{ asset('images/dc-logo.png') }}" alt="">
         <nav class="d-flex align-items-center">
             <ul class="d-flex">
@@ -20,8 +20,8 @@
                 <li class=""><a href=" #">VIDEOS</a></li>
                 <li class=""><a href=" #">FANS</a></li>
                 <li class=""><a href=" #">NEWS</a></li>
-                <li class=""><a href=" #">SHOP</a><span>&#9660;</span></li>
-                <li>Search<span>&#128269;</span></li>
+                <li class="select"><a href=" #">SHOP</a><span>&#9660;</span></li>
+                <li class="search">Search<span>&#128269;</span></li>
             </ul>
         </nav>
     </div>
